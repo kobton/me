@@ -48,6 +48,12 @@ public-hoist-pattern[]=*@nextui-org/*
 
 After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
+```bash
+ sudo docker buildx build --platform linux/arm64 -t me:latest --output=type=registry
+
+sudo docker push jakobmhamilton/me:latest
+```
+
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
